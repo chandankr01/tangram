@@ -1,0 +1,18 @@
+sources:
+    test:
+        type: GeoJSON
+        url: data/test.geojson
+        max_zoom: 20
+scene:
+    background:
+        color: white
+layers:
+    test:
+        data:
+            source: test
+        draw:
+            lines:
+                order: 1000
+                width: 2px
+                color: black
+
